@@ -1,0 +1,50 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: Georgia;
+  font-size: 17px;
+  margin: 0 auto;   /* center content */
+  max-width: 800px; /* limit width */
+  line-height: 1.5;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+#background {
+  position: relative;
+  padding: 15px;
+  width: auto;
+  height: auto;
+  background: white;
+  border-radius: 10px;
+}
+
+header, footer {
+  background-color: green;
+  color: white;
+  line-height: 100px;
+  padding: 0 20px;
+}
+
+.new-note, .note-display {
+  padding: 20px;
+}
+
+.new-note {
+  background: #ddd;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+div {
+  margin-bottom: 10px;
+}
