@@ -32,9 +32,9 @@ border-radius: 10px;
 .flex-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: nowrap;
 }
 
@@ -107,7 +107,7 @@ input[type="text"] {
 }
 
 /* установим отступ 1rem от нижнего края элемента */
-.text-field {
+/*.text-field {
   margin-bottom: 1rem;
 }
 
