@@ -100,21 +100,20 @@ function displayData() {
       // Create a list item, h3, and p to put each data item inside when displaying it
       // structure the HTML fragment, and append it inside the list
       const listItem = document.createElement('li');
+      listItem.className = 'flex-li ';
       const h3 = document.createElement('a');
       const para = document.createElement('p');
-      
 
       listItem.appendChild(h3);
-      listItem.appendChild(para);
-      list.appendChild(listItem);
-
-      
+      //listItem.appendChild(para);
+      list.appendChild(listItem);      
 
       // Put the data from the cursor inside the h3 and para
       h3.textContent = cursor.value.title;
       para.textContent = cursor.value.body;
-      h3.innerHTML = `<a id='url' href='${h3.textContent}'>${para.textContent}</a>`;
-      para.innerHTML ='<a></a>'
+      //h3.innerHTML = `<a id='url' href='${h3.textContent}'>${para.textContent}</a>`;
+      //para.outerHTML ='<a></a>'
+      h3.outerHTML = `<a id='url' href='${h3.textContent}'>${para.textContent}</a>`;
 
       // Store the ID of the data item inside an attribute on the listItem, so we know
       // which item it corresponds to. This will be useful later when we want to delete items
@@ -123,7 +122,8 @@ function displayData() {
       // Create a button and place it inside each listItem
       const deleteBtn = document.createElement('button');
       listItem.appendChild(deleteBtn);
-      deleteBtn.textContent = 'Delete';
+      deleteBtn.className = 'button__del'
+      deleteBtn.textContent = 'удалить';
 
       // Set an event handler so that when the button is clicked, the deleteItem()
       // function is run
@@ -135,7 +135,7 @@ function displayData() {
       // Again, if list item is empty, display a 'No notes stored' message
       if(!list.firstChild) {
         const listItem = document.createElement('li');
-        listItem.textContent = 'No notes stored.'
+        listItem.textContent = 'ссылки не добавлены'
         list.appendChild(listItem);
       }
       // if there are no more cursor items to iterate through, say so
