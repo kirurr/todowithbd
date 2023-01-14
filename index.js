@@ -113,7 +113,7 @@ function displayData() {
       para.textContent = cursor.value.body;
       //h3.innerHTML = `<a id='url' href='${h3.textContent}'>${para.textContent}</a>`;
       //para.outerHTML ='<a></a>'
-      h3.outerHTML = `<a id='url' href='${h3.textContent}'>${para.textContent}</a>`;
+      h3.outerHTML = `<a id='url' href='${h3.textContent}' onclick="copyURI(event)">${para.textContent}</a>`;
 
       // Store the ID of the data item inside an attribute on the listItem, so we know
       // which item it corresponds to. This will be useful later when we want to delete items
@@ -166,8 +166,17 @@ function deleteItem(e) {
     // Again, if list item is empty, display a 'No notes stored' message
     if(!list.firstChild) {
       const listItem = document.createElement('li');
-      listItem.textContent = 'No notes stored.';
+      listItem.textContent = 'ссылки не добавлены';
       list.appendChild(listItem);
     }
+  });
+}
+
+function copyURI(evt) {
+  evt.preventDefault();
+  navigator.clipboard.writeText(evt.target.getAttribute('href')).then(() => {
+    /* clipboard successfully set */
+  }, () => {
+    /* clipboard write failed */
   });
 }
