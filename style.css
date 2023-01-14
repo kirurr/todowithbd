@@ -48,14 +48,14 @@ html {
 }
 
 body {
-  background-color: rgba(40, 71, 151, 0.349);
+  background-color: rgba(40, 71, 151, 0.24);
   font-family: cursive;
   font-weight: 800;
   font-size: 17px;
   margin: 0 auto;   /* center content */
   max-width: 800px; /* limit width */
   line-height: 1.5;
-  padding-top: 32px;
+  padding-top: 32px;  
   padding-bottom: 32px;
 }
 
@@ -82,7 +82,7 @@ header, footer {
 .new-note {
   padding: auto;
   border-radius: 10px;
-  background-color: aqua;
+  background-color: rgb(200, 213, 228);
 }
 h2 {
 
