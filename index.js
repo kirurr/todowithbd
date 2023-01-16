@@ -100,7 +100,7 @@ function displayData() {
       // Create a list item, h3, and p to put each data item inside when displaying it
       // structure the HTML fragment, and append it inside the list
       const listItem = document.createElement('li');
-      listItem.className = 'flex-li ';
+      listItem.className = 'flex-li';
       const h3 = document.createElement('a');
       const para = document.createElement('p');
 
@@ -113,7 +113,7 @@ function displayData() {
       para.textContent = cursor.value.body;
       //h3.innerHTML = `<a id='url' href='${h3.textContent}'>${para.textContent}</a>`;
       //para.outerHTML ='<a></a>'
-      h3.outerHTML = `<a id='url' href='${h3.textContent}' onclick="copyURI(event)">${para.textContent}</a>`;
+      h3.outerHTML = `<a id='url' href='${h3.textContent}' onclick="copyURI(event); success();">${para.textContent}</a>`;
 
       // Store the ID of the data item inside an attribute on the listItem, so we know
       // which item it corresponds to. This will be useful later when we want to delete items
@@ -178,5 +178,20 @@ function copyURI(evt) {
     /* clipboard successfully set */
   }, () => {
     /* clipboard write failed */
-  });
-}
+  }
+) }
+
+
+
+$('a').click(function (e) { 
+  console.log('Успешно!');
+  $('.success').fadeOut();
+  e.preventDefault();
+  
+});
+
+function success() {
+  $('#success').fadeIn().delay(800).fadeOut();
+  return false;
+  
+};
