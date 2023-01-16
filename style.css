@@ -222,8 +222,10 @@ a#url {
 
 }
 
-
-
 li {
   text-align: center;
 }
+
+#success {
+  margin: 0;
+} 
