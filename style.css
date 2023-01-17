@@ -229,3 +229,9 @@ li {
 #success {
   margin: 0;
 } 
+
+.flex-urls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
