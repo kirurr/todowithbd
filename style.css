@@ -84,15 +84,13 @@ header, footer {
   border-radius: 10px;
   background-color: rgb(200, 213, 228);
 }
-h2 {
-
-}
 h1 {
   margin: 0;
 }
 
 ul {  
   list-style-type: none;
+  padding-left: 0;
 }
 
 div {
@@ -153,6 +151,7 @@ input[type="text"] {
   line-height: 1.5; 
   border: 1px solid #bdbdbd;  
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin: 0;
 } 
 
 .button__input:hover {
@@ -235,3 +234,4 @@ li {
   justify-content: space-between;
   align-items: center;
 }
+

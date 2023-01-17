@@ -191,7 +191,7 @@ $('a').click(function (e) {
 });
 
 function success() {
-  $('#success').fadeIn().delay(800).fadeOut();
+  $('#success').fadeIn().delay(600).fadeOut();
   return false;
   
 };
