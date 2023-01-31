@@ -1,13 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400&display=swap');
 .avatar {
   border-radius: 50%;
   width: 65px;
   height: 65px;
 }
 
+:root {
+  --text-shadow: 0px 3px 3px rgba(0,0,0,0.3);
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 15px;
+  box-shadow: 0px 3px 3px 3px rgba(0,0,0,0.3);
 }
 
 .new-note {
@@ -43,14 +50,15 @@ border-radius: 10px;
   margin: 0 10px 0 10px ;
 }
 
-html {
-  font-family: sans-serif;
-}
-
 body {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  -webkit-user-select: none; 
+  -webkit-touch-callout: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
   background-color: rgba(40, 71, 151, 0.24);
-  font-family: cursive;
-  font-weight: 800;
   font-size: 17px;
   margin: 0 auto;   /* center content */
   max-width: 800px; /* limit width */
@@ -80,10 +88,16 @@ header, footer {
 }
 
 .new-note {
+  box-shadow: 0px 3px 3px 3px rgba(0,0,0,0.3);
   padding: auto;
   border-radius: 10px;
   background-color: rgb(200, 213, 228);
 }
+
+h1, h2, li, button {
+  text-shadow: var(--text-shadow);
+}
+
 h1 {
   margin: 0;
 }
@@ -126,6 +140,7 @@ input[type="text"] {
   border: 1px solid #bdbdbd;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  filter: drop-shadow(0px 0px 3px);
 }
 
 .text-field__input:focus {
@@ -152,6 +167,7 @@ input[type="text"] {
   border: 1px solid #bdbdbd;  
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   margin: 0;
+  filter: drop-shadow(0px 0px 3px);
 } 
 
 .button__input:hover {
@@ -165,6 +181,7 @@ input[type="text"] {
 }
 
 .button__del {
+  filter: drop-shadow(0px 0px 3px);
   appearance: none;
   height: calc(2.25rem + 2px);
   border: 0;
@@ -191,6 +208,7 @@ input[type="text"] {
 }
 
 a#url {
+  filter: drop-shadow(0px 0px 3px);
   margin: 0 5% 0 5%;
   display: inline-flex;
   height: calc(2.25rem + 2px);
@@ -203,6 +221,7 @@ a#url {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; 
   align-items: center;
   justify-content: center
+
 }
 a#url:hover {
   background: #e6e6e6;
