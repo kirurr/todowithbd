@@ -87,6 +87,9 @@ header, footer {
   padding: 20px;
 }
 
+img {
+  pointer-events: none;
+}
 .new-note {
   box-shadow: 0px 3px 3px 3px rgba(0,0,0,0.3);
   padding: auto;
