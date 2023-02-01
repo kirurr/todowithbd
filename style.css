@@ -97,10 +97,6 @@ img {
   background-color: rgb(200, 213, 228);
 }
 
-h1, h2, li, button {
-  text-shadow: var(--text-shadow);
-}
-
 h1 {
   margin: 0;
 }
