@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400&display=swap');
+
+
+* {
+  text-shadow: var(--text-shadow);
+  transition: all 0.3s;
+}
+
+:root {
+  --text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  --text-shadow: 0px 3px 3px rgba(0,0,0,0.3);
+}
+
+
 .avatar {
   border-radius: 50%;
   width: 65px;
   height: 65px;
-}
-
-:root {
-  --text-shadow: 0px 3px 3px rgba(0,0,0,0.3);
 }
 
 header {
@@ -14,7 +23,7 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
-  box-shadow: 0px 3px 3px 3px rgba(0,0,0,0.3);
+  /* box-shadow: 0px 3px 3px 3px rgba(0,0,0,0.3); */
 }
 
 .new-note {
@@ -51,6 +60,7 @@ border-radius: 10px;
 }
 
 body {
+  color: var(--light-text-colour);
   font-family: 'Open Sans', sans-serif;
   font-family: 'Roboto', sans-serif;
   -webkit-user-select: none; 
@@ -58,7 +68,7 @@ body {
   -moz-user-select: none; 
   -ms-user-select: none; 
   user-select: none;
-  background-color: rgba(40, 71, 151, 0.24);
+  background-color: var(--light-background-colour);
   font-size: 17px;
   margin: 0 auto;   /* center content */
   max-width: 800px; /* limit width */
@@ -72,12 +82,12 @@ body {
   padding: 15px;
   width: auto;
   height: auto;
-  background: white;
+  background: var(--light-background-div-colour);
   border-radius: 10px;
 }
 
 header, footer {
-  background-color: rgba(40, 71, 151, 0.925);
+  background-color: var(--light-header-colour);
   color: white;
   line-height: 100px;
   padding: 0 20px;
@@ -91,10 +101,10 @@ img {
   pointer-events: none;
 }
 .new-note {
-  box-shadow: 0px 3px 3px 3px rgba(0,0,0,0.3);
+  /* box-shadow: 0px 3px 3px 3px rgba(0,0,0,0.3); */
   padding: auto;
   border-radius: 10px;
-  background-color: rgb(200, 213, 228);
+  background-color: var(--light-note-colour);
 }
 
 h1 {
@@ -257,3 +267,12 @@ li {
   align-items: center;
 }
 
+
+.circle {
+  background: var(--light-btn-colour);
+  border: 0.1875em solid var(--light-btn-border);
+  border-radius: 50%;
+  box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+  height: 2em;
+  width: 2em;
+}

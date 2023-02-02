@@ -1,0 +1,14 @@
+:root {
+    --light-text-colour: #fdfdfd;
+    --light-header-colour: rgba(40, 71, 151, 0.925);
+    --light-note-colour: #7b7b7b;
+    --light-background-colour: #202124;
+    --light-background-div-colour: #303134;
+    --light-btn-colour: #202124;
+    --light-btn-border: #7b7b7b;
+}
+
+.circle:hover {
+    --light-btn-colour: #fdfdfd;
+    --light-btn-border: #202124;
+}
