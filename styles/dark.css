@@ -4,11 +4,11 @@
     --light-note-colour: #7b7b7b;
     --light-background-colour: #202124;
     --light-background-div-colour: #303134;
-    --light-btn-colour: #202124;
-    --light-btn-border: #7b7b7b;
+    --light-btn-colour: #fdfdfd;
+    --light-btn-border: #202124;
 }
 
 .circle:hover {
-    --light-btn-colour: #fdfdfd;
-    --light-btn-border: #202124;
+    --light-btn-colour: #202124;
+    --light-btn-border: #7b7b7b;
 }

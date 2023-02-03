@@ -2,7 +2,6 @@
 
 
 * {
-  text-shadow: var(--text-shadow);
   transition: all 0.3s;
 }
 
@@ -27,6 +26,7 @@ header {
 }
 
 .new-note {
+  text-shadow: none;
   text-align: center;
 }
 
@@ -94,6 +94,7 @@ header, footer {
 }
 
 .new-note, .note-display {
+  text-shadow: none;
   padding: 20px;
 }
 
