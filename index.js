@@ -123,7 +123,7 @@ function displayData() {
       const deleteBtn = document.createElement('button');
       listItem.appendChild(deleteBtn);
       deleteBtn.className = 'button__del'
-      deleteBtn.textContent = 'удалить';
+      deleteBtn.textContent = 'Удалить';
 
       // Set an event handler so that when the button is clicked, the deleteItem()
       // function is run
@@ -135,7 +135,7 @@ function displayData() {
       // Again, if list item is empty, display a 'No notes stored' message
       if(!list.firstChild) {
         const listItem = document.createElement('li');
-        listItem.textContent = 'ссылки не добавлены'
+        listItem.textContent = 'Ссылки не добавлены'
         list.appendChild(listItem);
       }
       // if there are no more cursor items to iterate through, say so
